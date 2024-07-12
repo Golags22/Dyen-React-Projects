@@ -1,0 +1,44 @@
+.App > div  {
+  /* height: 240px; */
+  background-color: rgb(3, 3, 106);
+  /* align-self: center; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 37px;
+}
+
+.App {
+  display: grid;
+  grid-template-areas: 'box1 box1 box2' 'box3 box4 box2' 'box5 box5 box2';
+  gap: 10px;
+}
+
+.box1 {
+  grid-area: box1;
+  /* grid-row: 1 /span 2; */
+}
+
+.box2 {
+  grid-area: box2;
+  height: 100vh;
+}
+
+.box3 {
+  grid-area: box3;
+}
+
+.box4 {
+  grid-area: box4;
+}
+
+.box5 {
+  grid-area: box5;
+}
+
+@media screen and (max-width: 680px) {
+  .App > div {
+    font-size: 20px;
+  }
+}
